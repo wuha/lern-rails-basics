@@ -1,0 +1,14 @@
+<h1>Example#test</h1>
+<p>Find me in app/views/example/test.html.erb</p>
+<p>Test einer Addition</p>
+<%=(1+5)%>
+<br>
+<p>Test einer Schleife die von 1 auf 6 Zählt</p>
+<%1.upto(6) do |i| %>
+<%=i%>
+<%end%>
+
+<p>Attribut aus Controller</p>
+<%= @current_time %>
+
+<%= render "shard_partials/footer", :start_year=>"2000" %>

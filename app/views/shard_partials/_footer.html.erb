@@ -1,0 +1,10 @@
+<hr>
+
+<p>Copyright
+
+<% if defined? start_year %>
+<%= start_year %>
+<%else%>
+<%="not defined"%>
+<%end%>
+- <%= Date.today.year %></P>
