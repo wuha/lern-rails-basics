@@ -1,4 +1,6 @@
 LernRails::Application.routes.draw do
+  get "game/ping"
+  get "game/pong"
   get "example/test"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

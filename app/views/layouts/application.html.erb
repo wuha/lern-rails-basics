@@ -11,6 +11,11 @@
 <p>Alles nur ein Test (Application.html.erb)</p>
 <hr>
 
+<% flash.each do |name,message| %>
+<p><i><%= "#{name}: #{message}"%></i></p>
+<%end%>
+<p><%= flash[:notice]%></p>
+
 <%= yield %>
 
 </body>
